@@ -1,0 +1,16 @@
+name = "smart-planner-bot"
+main = "src/index.js"
+compatibility_date = "2026-01-01"
+
+[triggers]
+crons = ["* * * * *"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "smart-planner-db"
+database_id = "YOUR_D1_DATABASE_ID"
+
+[vars]
+TIMEZONE = "Asia/Tehran"
+PUBLIC_MODE = "false"
+DISABLE_WEB_AUTH = "false"
